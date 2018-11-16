@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Learn how to search the web for images, trace IP addresses, use Google like a pro, and more!">
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+    <title>IntellSec - Intelligence Gathering and Security</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="nav">
+    <div class="handle">&#9776; Menu</div>
+      <h1 id="intsec">IntellSec</h1>     
+      <a href="#" id="int-link" title="Learn how to gather intelligence">Intelligence Gathering</a><br>
+      <ul id="int-content">
+        <a class="nav-link" href="#intro" rel="internal"><li>Introduction</li></a>
+        <a class="nav-link" href="#google" rel="internal"><li>Using Google</li></a>
+        <a class="nav-link" href="#image" rel="internal"><li>Image Intelligence</li></a>
+        <a class="nav-link" href="#ip" rel="internal"><li>IP Address Information</li></a>
+        <a class="nav-link" href="#public" rel="internal"><li>Public Records</li></a>
+        <a class="nav-link" href="#social" rel="internal"><li>Social Media</li></a>
+        <a class="nav-link" href="#gps" rel="internal"><li>GPS</li></a>
+        <a class="nav-link" href="#reading" rel="internal"><li>Recommended Reading</li></a>
+    </ul>
+    </nav>
+    <main id="main">
+            <!-- <p id="close" style="font-size: 1.5em; cursor: pointer; float: left">&#9776;</p> -->
+      <section class="main-section" id="intro">
+        <div class="warning">
+           <p><strong><em>&#x26A0; The information and tools listed on this site are for educational purposes only. <br />You should not use this information to harass people, or for personal gain. &#x26A0;</em></strong></p>            
+        </div>
+        <header><strong>Intelligence Gathering & Security</strong></header>
+        <article>
+           <p>&quot;Open-source intelligence is data collected from publicly available sources to be used in an intelligence context.<br /> In the intelligence community, the term "open" refers to overt, publicly available sources.&quot; - Wikipedia</p>
+           <p>On this webpage, you will find a plethora of tools which you can use to gather intelligence. You'll also be able to explore links related to encryption, common web attacks(e.g. XSS, phishing), operating systems, etc. and learn from resources all over the web. I'll be constantly updating the content on this site. Make sure you check back often!</p>
+        </article>
+        </section>
+        <section id="google">
+          <header><strong>Using Google</strong></header>
+          <p><em>Learn how to use Google to it's full potential with these quick tips.</em></p>
+          <p><strong>Search Operators:</strong></p>
+          <p>Search operators allow you to specify certain things when looking something up, and have the syntax: <strong>operator:term</strong>, where <em>operator</em> is the specific operator(more down below), and term specifies what you're looking for.</p>
+          <li><strong>site:[url]</strong> Search using only one url.</li>
+          <li><strong>filetype:[pdf]</strong> Find file types that end with .pdf.</li>
+          <li><strong>phonebook:[name]</strong> Find phonebook listings of [name].</li>
+          <li><strong>allintitle:[term]</strong> Searches webpages with a specific title.</li>
+          <li><strong>allinurl:[term]</strong> Searches URLs for [term].</li>
+          <p>Equipped with a few simple operators, you can learn more down below. </p>
+          <li><a href="https://www.google.com/advanced_search" target="_blank">Google Advanced Search</a></li>
+          <li><a href="https://moz.com/learn/seo/search-operators" target="_blank">Moz.com Google Search Operators</a></li>
+        </section>
+      <section id="image">
+          <header><strong>Gathering Information: Images</strong></header>
+          <p><em>How to extract data from images; how to find images on other areas of the web, and more.</em></p>
+          <article>
+              <h3>Reverse Image Searching</h3>
+              <p>Need help finding an image? Try reverse image searching.</p>
+              <li><a href="https://www.tineye.com" target="_blank">Tineye</a></li>
+              <li><a href="https://www.google.com/imghp" target="_blank">Google Reverse Image Search</a></li>
+              <li><a href="https://www.reverse-image-search.com" target="_blank">Reverse Image Search (Searches Google, Bing, and Yandax)</a></li>
+              <h3>Image Manipulation</h3>
+              <p>Explore and manipulate data found in images</p>
+              <ul>
+              <li>
+                  <a href="https://29a.ch/photo-forensics/#forensic-magnifier" target="_blank">Forensically</a>
+                  <ul>
+                      <li>image forensic analysis</li> 
+                      <li>includes clone detection analysis</li>
+                      <li>metadata extraction, and more.</li>
+                </ul>
+              </li>
+              <li>
+                  <a href="https://sno.phy.queensu.ca/~phil/exiftool" target="_blank">ExifTool</a>
+                  <ul>
+                      <li>Read, write, and edit meta-information.</li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="http://www.impulseadventure.com/photo/jpeg-snoop.html" target="_blank">JPEGsnoop</a>
+                  <ul>
+                      <li>Analyzes the source of the image to test its authenticity.</li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="http://www.geosetter.de/en" target="_blank">GeoSetter</a>
+                  <ul>
+                     <li>Manipulate/view geodata - and other metadata information.</li>
+                   </ul>
+               </li>
+               </ul>
+               <h3>Optical Character Recognition Tools</h3>
+               <li><a href="https://www.paperfile.net/index.html" target="_blank">FreeOCR</a></li>
+               <li><a href="https://www.i2ocr.com" target="_blank">Free Online OCR</a></li>
+               <li><a href="https://www.newocr.com" target="_blank">NewOCR</a></li>
+          </article>
+      </section>
+      <section id="ip">
+        <header><strong>IP Addresses</strong></header>
+        <article>
+            <p>&quot;An Internet Protocol address (IP address) is a numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication. An IP address serves two principal functions: host or network interface identification and location addressing.&quot; -Wikipedia</p>
+            <p>Obtaining a person's IP adress is as simple as creating a website for people to visit. When someone connects, you'll be able to see an HTTP <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET">GET</a> request from the IP address.</p>
+            <h3>WHOIS Lookup</h3>
+            <p>With a WHOIS lookup, you're able to see various things related to an IP address, such as who it is registered to, the location, etc.</p>
+            <img src="./img/whois.png" alt="whois lookup">
+            <p style="font-size: .89em"><em>Example of a WHOIS lookup using the terminal.</em></p><br />
+            <p>Visit the <a href="https://whois.icann.org/en " target="_blank">ICANN WHOIS Lookup Website.</a></p>
+            <h3>Additional IP Address Tracking Tools</h3>
+                <li><a href="https://www.ipverse.com" target="_blank">IPverse</a></li>
+                <li><a href="https://www.ip2location.com/demo.aspx" target="_blank">IP2Location</a></li>
+                <li><a href="https://www.ipfingerprints.com" target="_blank">IPfingerPrints</a></li>
+        </article>
+      </section>
+      <section id="public">
+          <header><strong>Public Records</strong></header>
+          <article>
+              <p>Public records include things such as: ownership of properties, birth records, death records, criminal records, and much more. Below are some useful links to aide you in your intelligence gathering.</p>
+              <li><a href="https://www.whitepages.com" target="_blank">Whitepages</a></li>
+              <li><a href="https://com.lullar.com" target="_blank">Lullar</a></li>
+              <li><a href="https://www.familytreenow.com" target="_blank">Family Tree Now</a></li>
+              <li><a href="https://www.radaris.com" target="_blank">Radaris</a></li>
+              <li><a href="http://www.infospace.com" target="_blank">Infospace</a></li>
+              <li><a href="https://www.webmii.com" target="_blank">Webmii</a></li>
+          </article>
+      </section>
+      <section id="social">
+          <header><strong>Social Media</strong></header>
+          <p>Social media accounts are treasure chests for the intelligence seeker. Locations, favorite bars, movies, books, pet names, family, you name it, and you'll probably find it within a social media account.</p>
+          <p>It is usually recommended to set up fake accounts for each of these services. Keep in mind that this may violate the <em>terms of service</em> on such platforms.</p>
+          <article>
+              <h3>Facebook</h3>
+              <p>Specifying information with the URL:</p>
+              <li><strong>Places Visited:</strong> facebook.com/search/[user_id]/places-visited</li>
+              <li><strong>Places Checked-in:</strong> facebook.com/search/[user_id]/places-checked-in</li>
+              <li><strong>See posts from a specific location. Search: </strong>Posts written in Orlando, FL</li>
+              <h3>Instagram</h3>
+              <p>Section coming soon...</p>
+              <h3>Twitter</h3>
+              <p>Section coming soon...</p>
+              <h3>Linkedin</h3>
+              <p>Section coming soon...</p>
+              <h3>Google+</h3>
+              <p>Section coming soon...</p>
+              <h3>Psychological Analysis</h3>
+              <p>Get a glimpse into the common emotions expressed by a target.</p>
+              <ul>
+              <li>
+                  <a href="https://www.tone-analyzer-demo.mybluemix.net">Tone Analyzer</a>
+                  <ul>
+                    <li>Linguistic Analysis which detects human feelings.</li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="https://www.ibm.com/watson/services/tone-analyzer/">IBM Watson Tone Analyzer</a>
+                  <ul>
+                      <li>Similar to the above.</li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="https://applymagicsauce.com/demo.html">Facebook/Twitter Prediction</a>
+                  <ul>
+                      <li>Predicts demographics, such as age, political views, sexual orientation, etc.</li>
+                  </ul>
+              </li>
+              </ul>
+          </article>
+      </section>
+      <section id="gps">
+            <header><strong>GPS Intelligence</strong></header>
+            <article>
+                <p>Section coming soon...</p>
+            </article>
+        </section>
+      <section id="reading">
+          <header><strong>Recommended Reading</strong></header>
+          <article>
+              <p>books</p>
+          </article>
+      </section>
+    </main>
+    <script src="./jquery.js"></script>
+    <script>
+      $(document).ready(function() {
+        //   $('#int-content').hide();
+          $('#int-link').click(function(e) {
+              e.preventDefault();
+              $('#int-content').toggle();
+          });
+
+          $('#close').click(function(e) {
+              e.preventDefault();
+              $('nav').toggle(500);
+          })
+
+       // displays menu items for mobile view
+       $(".handle").on("click", function() {
+       $("nav ul").toggleClass("showing");
+       });  
+      })
+    </script>
+    <script src="smoothScroll.js"></script>
+</body>
+</html>
