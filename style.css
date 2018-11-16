@@ -16,16 +16,13 @@ html,body {
   }
   nav h1 {
     margin-top: 5px;
-    text-decoration: underline;
-    /* text-align:center; */
+    border-bottom: 1px solid #239093;
+    padding: 15px;
     margin-left: 18px;
     font-size: 1.7em;
     font-family: 'Abel', sans-serif;
-    color: #ffffff;
-  }
-  nav h1:hover { 
-    color: red; 
-    cursor: pointer;
+    color: #239093;
+
   }
   .warning {
     text-align: center;
@@ -64,14 +61,37 @@ html,body {
     color: #239093;
   }
   .main-link {
-      font-size: 1.4em;
+      font-size: 1.2em;
       margin-left: 10px;
       font-family:  Arial, Helvetica, sans-serif;
+      text-decoration: none;
+      position: relative;
+      padding-bottom: 8px;
+
   }
   .main-link:hover {
     color: #fff;
-    border-bottom: 1px solid #239093;
+    /* border-bottom: 1px solid #239093; */
     /* padding: 5px; */
+  }
+  .main-link:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #239093;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  .main-link:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
   }
   #intro {
      margin-bottom: 50px;
