@@ -37,23 +37,23 @@ html,body {
     text-align:left;
     font-size: 1.8em;
   }
-  nav ul{
+  nav ul {
     /* height: 50%; */
     overflow-y: auto;
     overflow-x: hidden;
     font-family:  Arial, Helvetica, sans-serif;
   }
-  nav li{
+  nav li {
     /* border: 1px solid; */
     border-bottom-width: 0px;
     padding: 8px;
     padding-left: 45px;
     list-style: none;
     position:relative;
-   left:-50px;
+    left:-50px;
     width: 100%;
   }
-  nav a{
+  nav a {
     text-decoration: none;
     color: #fff;
     outline: 0;
@@ -137,10 +137,5 @@ html,body {
     }
     .showing {
       max-height: 20em;
-    }
-  }
-  @media only screen and (max-width: 400px) {
-    #main{
-      margin-left:-10px;
     }
   }
