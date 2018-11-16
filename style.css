@@ -38,7 +38,7 @@ html,body {
     font-size: 1.8em;
   }
   nav ul{
-    height:88%;
+    /* height:88%; */
     overflow-y:auto;
     overflow-x:hidden;
   }
@@ -62,7 +62,7 @@ html,body {
     /* border-bottom: .3px solid red; */
     color: red;
   }
-  #int-link {
+  .main-link {
       font-size: 1.4em;
       margin-left: 10px;
   }
