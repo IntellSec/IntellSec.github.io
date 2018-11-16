@@ -23,14 +23,21 @@
         <li><a class="nav-link" href="#social" rel="internal">Social Media</a></li>
         <li><a class="nav-link" href="#gps" rel="internal">GPS</a></li>
         <li><a class="nav-link" href="#reading" rel="internal">Recommended Reading</a></li>
-    </ul>
-    <a href="#" class="main-link" title="Learn how security principals">Security</a><br>
-    <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+    </ul><br>
+    <a href="#" class="main-link" id="sec-link" title="Learn how security principals">Security</a><br>
+    <ul id="sec-content">
+        <li><a class="nav-link" href="#encrypt" rel="internal">Encryption</a></li>
+        <li><a class="nav-link" href="#xss" rel="internal">Cross-Site Scripting</a></li>
+        <li><a class="nav-link" href="#networks" rel="internal">Networks</a></li>
+        <li><a class="nav-link" href="#extensions" rel="internal">Browser Extensions</a></li>
+        <li><a class="nav-link" href="#os-command" rel="internal">OS Command injections</a></li>
+    </ul><br>
+    <a href="#" class="main-link" id="read-link" title="All the books you will ever need">Recommended Reading</a><br>
+    <ul id="read-content">
+        <li><a class="nav-link" href="#">Browser hacker</a></li>
+        <li><a class="nav-link" href="#">Browser hacker</a></li>
+        <li><a class="nav-link" href="#">Browser hacker</a></li>
+        <li><a class="nav-link" href="#">Browser hacker</a></li>
     </ul>
     </nav>
     <main id="main">
@@ -183,7 +190,7 @@
       <section id="reading">
           <header><strong>Recommended Reading</strong></header>
           <article>
-              <p><strong>Note:</strong> These are affiliate links. If for some reason you'd rather not use them, please look them up elsewhere. They are all brilliant books, which will serve you well in your pursuit.</p>
+              <p>The Recommended Reading below is anything to do with computers. From programming in C, JavaScript, Python, to GNU/Linux, compilers, and beyond. Reading just one of the books below will improve you.</p>
               <li>
                 <a target="_blank" href="https://www.amazon.com/gp/product/B07F5Y6P56/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B07F5Y6P56&linkCode=as2&tag=mattf221996-20&linkId=7108ff378483558da6215684fa69b874">Open Source Intelligence Methods and Tools: A Practical Guide to Online Intelligence</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=mattf221996-20&l=am2&o=1&a=B07F5Y6P56" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
                 <ul>
@@ -216,29 +223,14 @@
                   <li>An entertaining, easy-to-read book on web application security.</li>
                 </ul>
               </li>
+
+              <br>
+              <p><strong>Note:</strong> These are affiliate links. If for some reason you'd rather not use them, please look them up elsewhere. They are all brilliant books, which will serve you well in your pursuit.</p>
           </article>
       </section>
     </main>
     <script src="./jquery.js"></script>
-    <script>
-      $(document).ready(function() {
-        //   $('#int-content').hide();
-          $('#int-link').click(function(e) {
-              e.preventDefault();
-              $('#int-content').toggle();
-          });
-
-          $('#close').click(function(e) {
-              e.preventDefault();
-              $('nav').toggle(500);
-          })
-
-       // displays menu items for mobile view
-       $(".handle").on("click", function() {
-       $("nav ul").toggleClass("showing");
-       });  
-      })
-    </script>
+    <script src="./script.js"></script>
     <script src="smoothScroll.js"></script>
 </body>
 </html>
