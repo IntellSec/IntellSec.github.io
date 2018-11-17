@@ -27,6 +27,7 @@ html,body {
   a {
     color:#239093;
     text-decoration: none;
+    list-style-type: none;
   }
   a:hover {
     color: #739999;
@@ -131,7 +132,9 @@ html,body {
     color: red;
     display: none;
   }
- 
+  #reading li {
+    list-style-type: none;
+  }
   @media only screen and (max-width: 815px) {
       /* For mobile phones: */
       nav ul li {
