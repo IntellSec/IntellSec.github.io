@@ -28,6 +28,9 @@ html,body {
     color:#239093;
     text-decoration: none;
   }
+  a:hover {
+    color: #739999;
+  }
   .warning {
     text-align: center;
     margin-bottom: 45px;
