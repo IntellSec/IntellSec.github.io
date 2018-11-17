@@ -22,8 +22,8 @@ html,body {
     font-size: 1.7em;
     font-family: 'Abel', sans-serif;
     color: #239093;
-
   }
+  #intsec {color: #239093}
   a {
     color:#239093;
     text-decoration: none;
