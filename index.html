@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <nav id="nav">
+    <nav>
     <div class="handle">&#9776; Menu</div>
       <h1 id="intsec">IntellSec</h1>
       <a href="#" class="main-link" id="int-link" title="Learn how to gather intelligence">Intelligence Gathering</a><br>
@@ -23,15 +23,18 @@
         <li><a class="nav-link" href="#public" rel="internal">Public Records</a></li>
         <li><a class="nav-link" href="#social" rel="internal">Social Media</a></li>
         <li><a class="nav-link" href="#gps" rel="internal">GPS</a></li>
-        <li><a class="nav-link" href="#reading" rel="internal">Recommended Reading</a></li>
+        <!-- <li><a class="nav-link" href="#reading" rel="internal">Recommended Reading</a></li> -->
     </ul><br>
     <a href="#" class="main-link" id="sec-link" title="Learn how security principals">Security</a><br>
     <ul id="sec-content">
+        <li><a class="nav-link" href="#phys-sec" rel="internal">Physical Security</a></li>
         <li><a class="nav-link" href="#encrypt" rel="internal">Encryption</a></li>
         <li><a class="nav-link" href="#xss" rel="internal">Cross-Site Scripting</a></li>
+        <li><a class="nav-link" href="#phish" rel="internal">Phishing</a></li>
         <li><a class="nav-link" href="#networks" rel="internal">Networks</a></li>
+        <li><a class="nav-link" href="#packet" rel="internal">Packet Sniffing</a></li>
         <li><a class="nav-link" href="#extensions" rel="internal">Browser Extensions</a></li>
-        <li><a class="nav-link" href="#os-command" rel="internal">OS Command injections</a></li>
+        <li><a class="nav-link" href="#os-command" rel="internal">OS Command Injections</a></li>
     </ul><br>
     <a href="#" class="main-link" id="prog-link" title="Various programming resources">Programming</a><br>
     <ul id="prog-content">
@@ -39,13 +42,6 @@
         <li><a class="nav-link" href="#javascript" rel="internal">JavaScript</a></li>
         <li><a class="nav-link" href="#htmlcss" rel="internal">HTML/CSS</a></li>
         <li><a class="nav-link" href="#python" rel="internal">Python</a></li>
-    </ul><br>
-    <a href="#" class="main-link" id="read-link" title="All the books you will ever need">Recommended Reading</a><br>
-    <ul id="read-content">
-        <li><a class="nav-link" href="#">Browser hacker</a></li>
-        <li><a class="nav-link" href="#">Browser hacker</a></li>
-        <li><a class="nav-link" href="#">Browser hacker</a></li>
-        <li><a class="nav-link" href="#">Browser hacker</a></li>
     </ul><br>
     <a href="#" class="main-link" id="misc-link" title="Miscellaneous">Miscellaneous</a><br>
     <ul id="misc-content">
@@ -55,6 +51,8 @@
         <li><a class="nav-link" href="https://www.hackthebox.eu/" target="_blank">Hack The Box</a></li>
         <li><a class="nav-link" href="https://haveibeenpwned.com/Passwords" target="_blank">Have I Been Pwned</a></li>
     </ul><br>
+       <!-- Reading list -->
+       <a href="#reading" class="main-link" id="read-link" title="All the books you will ever need">Recommended Reading</a>
     </nav>
     <main id="main">
             <!-- <p style="float:left; font-size: 1.5em; color: black; cursor: pointer;" id="close">&#9776;</p> -->
@@ -63,7 +61,7 @@
         <div class="warning">
            <p><strong><em>&#x26A0; The information and tools listed on this site are for educational purposes only. <br />You should not use this information to harass people, or for unethical reasons. &#x26A0;</em></strong></p>            
         </div>
-        <header><strong>Intelligence Gathering & Security</strong></header>
+        <header class="nav-title"><strong>Intelligence Gathering & Security</strong></header>
         <article>
            <p>&quot;Open-source intelligence is data collected from publicly available sources to be used in an intelligence context.<br /> In the intelligence community, the term "open" refers to overt, publicly available sources.&quot; - Wikipedia</p>
            <p>On this webpage, you will find a plethora of tools which you can use to gather intelligence. You'll also be able to explore links related to encryption, common web attacks(e.g. XSS, phishing), operating systems, etc. and learn from resources all over the web. I'll be constantly updating the content on this site. Make sure you check back often!</p>
@@ -135,7 +133,7 @@
         <header><strong>IP Addresses</strong></header>
         <article>
             <p>&quot;An Internet Protocol address (IP address) is a numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication. An IP address serves two principal functions: host or network interface identification and location addressing.&quot; -Wikipedia</p>
-            <p>Obtaining a person's IP adress is as simple as creating a website for people to visit. When someone connects, you'll be able to see an HTTP <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET">GET</a> request from the IP address.</p>
+            <p>Obtaining a person's IP adress is as simple as creating a website for people to visit, or by using an online service, to name a few. When someone connects, you'll be able to see an HTTP <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET">GET</a> request from the IP address.</p>
             <h3>WHOIS Lookup</h3>
             <p>With a WHOIS lookup, you're able to see various things related to an IP address, such as who it is registered to, the location, etc.</p>
             <img src="./img/whois.png" alt="whois lookup">
@@ -174,6 +172,10 @@
                 <ul>
                     <li>Another people search engine.</li>
                 </ul>
+                <li><a href="https://www.linkedin.com" target="_blank">Linkedin</a></li>
+                <ul>
+                    <li>Get people's work history, current job, education, location, etc.</li>
+                </ul>
               </ul>
               <h3>Social Security Numbers</h3>
                   <ul>
@@ -188,38 +190,53 @@
                   </ul>
                <h3>Usernames</h3>
                  <ul>
-                     <li><a href="http://checkusernames.com/">Check User Names</a></li>
+                     <li><a href="http://checkusernames.com/" target="_blank">Check User Names</a></li>
                      <ul>
                          <li>Checks various social media sites for a specified username.</li>
                      </ul>
-                     <li><a href="https://www.usersearch.org/">User Search</a></li>
+                     <li><a href="https://www.usersearch.org/" target="_blank">User Search</a></li>
                      <ul>
                          <li>Like the above.</li>
                      </ul>
                  </ul>
                  <h3>Email Investigation</h3>
                    <ul>
-                       <li><a href="https://centralops.net/co/emaildossier.aspx">Email Dossier</a></li>
+                       <li><a href="https://centralops.net/co/emaildossier.aspx" target="_blank">Email Dossier</a></li>
                        <ul>
                            <li>Validation reports about emails.</li>
                        </ul>
-                       <li><a href="https://email-checker.net/">Email Checker</a></li>
+                       <li><a href="https://email-checker.net/" target="_blank">Email Checker</a></li>
                        <ul>
                            <li>Verifies if an email address is real.</li>
                        </ul>
-                       <li><a href="http://mailtester.com/testmail.php">Mail Tester</a></li>
+                       <li><a href="http://mailtester.com/testmail.php" target="_blank">Mail Tester</a></li>
                        <ul>
                            <li>Verifies email address.</li>
                        </ul>
-                       <li><a href="https://email-format.com/">Email Format</a></li>
+                       <li><a href="https://email-format.com/" target="_blank">Email Format</a></li>
                        <ul>
                            <li>Get format-specific emails from companies.</li>
                        </ul>
-                       <li><a href="https://www.iptrackeronline.com/email-header-analysis.php">IP Tracker Online</a></li>
+                       <li><a href="https://www.iptrackeronline.com/email-header-analysis.php" target="_blank">IP Tracker Online</a></li>
                        <ul>
                            <li>Get an email senders IP address, including location.</li>
                        </ul>
                    </ul>
+                   <h3>Phone Numbers</h3>
+                   <ul>
+                       <li><a href="https://www.zlookup.com/" target="_blank">Z Lookup</a></li>
+                        <ul>
+                            <li>Reverse Search Phone numbers.</li>
+                        </ul>
+                        <li><a href="https://www.reversephonelookup.com/" target="_blank">Reverse Phone Lookup</a></li>
+                        <ul>
+                            <li>Another reverse phone lookup.</li>
+                        </ul>
+                        <li><a href="https://www.spydialer.com/" target="_blank">Spy Dialer</a></li>
+                        <ul>
+                            <li>Yet another reverse phone lookup...</li>
+                        </ul>
+                    </ul>
           </article>
       </section>
       <!-- Social Media section -->
@@ -246,19 +263,19 @@
               <p>Get a glimpse into the common emotions expressed by a target.</p>
               <ul>
               <li>
-                  <a href="https://www.tone-analyzer-demo.mybluemix.net">Tone Analyzer</a>
+                  <a href="https://www.tone-analyzer-demo.mybluemix.net" target="_blank">Tone Analyzer</a>
                   <ul>
                     <li>Linguistic Analysis which detects human feelings.</li>
                   </ul>
               </li>
               <li>
-                  <a href="https://www.ibm.com/watson/services/tone-analyzer/">IBM Watson Tone Analyzer</a>
+                  <a href="https://www.ibm.com/watson/services/tone-analyzer/" target="_blank">IBM Watson Tone Analyzer</a>
                   <ul>
                       <li>Similar to the above.</li>
                   </ul>
               </li>
               <li>
-                  <a href="https://applymagicsauce.com/demo.html">Facebook/Twitter Prediction</a>
+                  <a href="https://applymagicsauce.com/demo.html" target="_blank">Facebook/Twitter Prediction</a>
                   <ul>
                       <li>Predicts demographics, such as age, political views, sexual orientation, etc.</li>
                   </ul>
@@ -273,9 +290,22 @@
                 <p>Section coming soon...</p>
             </article>
         </section>
+        <!-- Security section -->
+        <section id="security">
+            <header class="nav-title"><strong>Security</strong></header>
+            <article>
+                <p>Section coming soon...</p>
+            </article>
+        </section>
+        <section id="programming">
+            <header class="nav-title"><strong>Programming</strong></header>
+            <article>
+                <p>Section coming soon...</p>
+            </article>
+        </section>
         <!-- Reading list section -->
       <section id="reading">
-          <header><strong>Recommended Reading</strong></header>
+          <header class="nav-title"><strong>Recommended Reading</strong></header>
           <article>
               <p>The Recommended Reading below is anything to do with computers. From programming in C, JavaScript, Python, to GNU/Linux, compilers, and beyond. Reading just one of the books below will improve you.</p>
               <li>
