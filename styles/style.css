@@ -108,7 +108,6 @@ html,body {
     position: absolute;
     margin-left: 310px;
     padding: 20px;
-    margin-bottom: 110px;
   }
   section {
     margin-top: 50px;
@@ -131,7 +130,6 @@ html,body {
     padding: 15px 10px;
     display: none;
   }
-  /* test */
   #reading li {
     list-style-type: none;
   }
