@@ -39,7 +39,23 @@ html,body {
     border: solid 1px;
     border-radius: 4px 4px 4px 4px;
   }
-  
+  /* Test */
+  /* .info-section {
+    background-color: #239093;  
+    position: absolute;
+    bottom: 0;
+    height: 90px; 
+  }
+ .info-section li {
+   font-size: .8em;
+   display: inline;
+   color: #fff;
+ }
+ .info-section a {
+   color: #fff;
+   font-size: .8em;
+ } */
+
   header {
     text-align:left;
     font-size: 1.8em;
@@ -54,7 +70,7 @@ html,body {
     padding: 8px;
     padding-left: 45px;
     list-style: none;
-    position:relative;
+    position: relative;
     left:-50px;
     width: 100%;
   }
@@ -133,4 +149,118 @@ html,body {
   #reading li {
     list-style-type: none;
   }
+  .sticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+  }
+  /* @media screen and (max-width: 580px) {
+    header {
+      padding-top: 0;
+      margin-top: 45px;
+      transition: all 0.3s ease;
+      margin-bottom: 0;
+    } */
+    /* nav {
+      position: fixed;
+      top: 0;
+      left: -15em;
+      overflow: hidden;
+      transition: all .3s ease-in;
+      width: 15em;
+      height: 100%;
+      background: #333;
+      color: rgba(255, 255, 255, 0.7);
+    }
+    nav ul {
+      top: 1.3em;
+    }
+    nav ul li {
+      width: 100%;
+    }
+    nav a {
+      position: absolute;
+      top: 50%;
+      left: 4em;
+      transform: translateY(-50%);
+    } */
+    /* #main {
+    } */
+    /* nav ul {
+      max-height: 0; */
+    /* }
+    nav ul li { */
+      /* box-sizing: border-box; */
+      /* width: 100%; */
+      /* padding: 15px; */
+      /* text-align: left; */
+    /* }
+    .handle {
+      display: block;
+    }
+    .showing {
+      max-height: 10em;
+    }
+  }   */
 
+  @media only screen and (max-width: 500px) {
+  /* nav ul {
+  border:1px solid;
+    height:207px;
+  } */
+    /* nav {
+      position: absolute;
+      top: 0;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      max-height: 275px;
+      border: none;
+      z-index: 1;
+    }
+    nav a {
+      position: absolute;
+      top: 50%;
+      left: 4em;
+    } 
+    nav ul {
+      max-height: 0;
+    }
+    nav ul li { 
+      box-sizing: border-box;
+      width: 100%;
+      padding: 15px;
+      text-align: left;
+    } */
+    nav {
+      display: none;
+    }
+  #main {
+    position: relative;
+    margin-left:0px;
+    margin-top:270px;
+    padding: 10px;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .handle {
+    display: block;
+  }
+  .showing {
+    max-height: 20em;
+  }
+  .warning {
+    border: 0;
+    margin-bottom: 40px
+  }
+}
+@media only screen and (max-width: 400px) {
+  #main {
+    margin-left:-10px;
+  }
+}
