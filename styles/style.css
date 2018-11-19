@@ -149,14 +149,14 @@ html,body {
   #reading li {
     list-style-type: none;
   }
-  .sticky {
+  /* .sticky {
     position: fixed;
     width: 100%;
     left: 0;
     top: 0;
     z-index: 100;
     border-top: 0;
-  }
+  } */
   /* @media screen and (max-width: 580px) {
     header {
       padding-top: 0;
