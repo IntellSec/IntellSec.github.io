@@ -149,6 +149,15 @@ html,body {
   #reading li {
     list-style-type: none;
   }
+  .bottom {
+    float: right;
+    font-size: .8em; 
+    margin-right: 10px; 
+    padding-right: 5px;
+  }
+  .bottom a:nth-child(2) {
+    margin-left: 10px;
+  }
   /* .sticky {
     position: fixed;
     width: 100%;
