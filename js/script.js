@@ -24,32 +24,8 @@ $(document).ready(function() {
         e.preventDefault();
         $('#prog-content').toggle(200);
     })
-    //   $('#close').click(function(e) {
-    //       e.preventDefault();
-    //       $('nav').toggle(500);
-    //   })
-
-   // displays menu items for mobile view
-  //  var navScrollTop = $("nav").offset().top;
-  
-  //  function navScroll() {
-  //    var scrollTop = $(window).scrollTop();
- 
-  //    if (scrollTop > navScrollTop) {
-  //      $("nav").addClass("sticky");
-  //    } else {
-  //      $("nav").removeClass("sticky");
-  //    }
-  //  }
-  //  navScroll();
- 
-  //  $(window).scroll(function() {
-  //    navScroll();
-  //  });
- 
    // Media query displays menu items for mobile view
    $(".handle").on("click", function() {
      $("nav ul").toggleClass("showing");
    });
-  })
-  
+});
